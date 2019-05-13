@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="55dp"
         android:orientation="horizontal">
@@ -19,38 +19,48 @@
         <ImageButton
             android:id="@+id/btnLapLai"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
 
-            app:srcCompat="@drawable/repeat" />
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="onRepeat"
+            android:src="@drawable/no_repeat" />
 
         <ImageButton
             android:id="@+id/btnPrevious"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="onPrev"
             app:srcCompat="@drawable/rewind" />
 
         <ImageButton
             android:id="@+id/btnPlay"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="onPlay"
             app:srcCompat="@drawable/play" />
 
         <ImageButton
             android:id="@+id/btnNext"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="onNext"
             app:srcCompat="@drawable/fast_forward" />
 
         <ImageButton
             android:id="@+id/btnNgauNhien"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/shuffle" />
+            android:background="@android:color/transparent"
+            android:onClick="onShuffle"
+            app:srcCompat="@drawable/no_shuffle" />
 
     </LinearLayout>
 
@@ -64,7 +74,7 @@
         android:layout_marginStart="54dp"
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="297dp"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@drawable/music_record" />
 
     <TextView
         android:id="@+id/txtTenCaSi"
